@@ -129,24 +129,24 @@
             modal.close();
         });
 
-        // Acción al confirmar
-        confirmBtn.addEventListener('click', () => {
-    window.location.href = 'https://github.com/buitimeaarellanol-sys';
-        });
+            // Acción al confirmar
+    confirmBtn.addEventListener('click', () => {
+        window.location.href = 'https://gd.games';
+    });
 
-        // Cerrar si el usuario hace clic fuera del contenido del modal
-        modal.addEventListener('click', (e) => {
-            const dialogDimensions = modal.getBoundingClientRect();
-            if (
-                e.clientX < dialogDimensions.left ||
-                e.clientX > dialogDimensions.right ||
-                e.clientY < dialogDimensions.top ||
-                e.clientY > dialogDimensions.bottom
-            ) {
-                modal.close();
-            }
-        });
-    </script>
+    // Cerrar si el usuario hace clic fuera del contenido del modal
+    modal.addEventListener('click', (e) => {
+        const dialogDimensions = modal.getBoundingClientRect();
+        if (
+            e.clientX < dialogDimensions.left ||
+            e.clientX > dialogDimensions.right ||
+            e.clientY < dialogDimensions.top ||
+            e.clientY > dialogDimensions.bottom
+        ) {
+            modal.close();
+        }
+    });
+</script>
 
 </body>
 </html>
